@@ -1,0 +1,94 @@
+.contenedor-principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-secundario {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tarjeta {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.tarjeta span {
+    font-size: 14px;
+} 
+  
+.roja { background-color: #e74c3c; }
+.verde { background-color: #27ae60; }
+.azul  { background-color: #3498db; }
+.morado { background-color: #8e44ad; }
+  
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filtros nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+  
+.filtros .acciones select,
+.filtros .acciones button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #ecf0f1;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table td:last-child {
+    font-size: 18px;
+}
+
+.filtros nav a.activo {
+    border-bottom: 2px solid #3498db;
+    color: #3498db;
+}

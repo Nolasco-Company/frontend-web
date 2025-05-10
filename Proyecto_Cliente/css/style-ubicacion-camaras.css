@@ -1,0 +1,57 @@
+.marcador-personalizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcador-contenido {
+    font-size: 20px;
+    text-shadow: 0 0 3px white;
+}
+
+.popup-mapa {
+    min-width: 200px;
+}
+
+.popup-mapa h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.popup-mapa {
+    font-family: Arial, sans-serif;
+    min-width: 200px;
+}
+
+.popup-mapa h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.popup-mapa .warning {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+#mapa-mensaje.error {
+    background: #ffdddd;
+    color: #e74c3c;
+}
+
+#mapa-mensaje.success {
+    background: #ddffdd;
+    color: #27ae60;
+}

@@ -1,0 +1,70 @@
+.pagos .contenedor-historial {
+    background-color: #f5f6fa;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+}
+
+.pagos .busqueda {
+    margin-bottom: 15px;
+}
+
+.pagos #buscador {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pagos h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pagos table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pagos th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pagos th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.pagos .icono-metodo {
+    width: 24px;
+    height: auto;
+}
+
+.pagos .badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+.pagos .autorizado {
+    background-color: #bdc3c7;
+}
+
+.pagos .concretado {
+    background-color: #2ecc71;
+}
+
+.pagos .fallido {
+    background-color: #e74c3c;
+}
