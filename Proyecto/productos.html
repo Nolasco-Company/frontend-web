@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-productos.css">
+    <title>Secure Vision</title>
+</head>
+<body class="home">
+    <header>
+        <div>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
+        </div>
+        <div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-productos">
+        <div class="site-header">
+            <div class="cart-icon">
+                <img src="img/cart.png" alt="Ver carrito"/>
+                <div class="cart-dropdown">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Cant.</th>
+                        <th>Acción</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                      <!-- Inyectado por JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        </div>
+        <h1>Productos</h1>
+        <div class="contenedor-productos">
+            <a class="producto-busqueda alarmas" href="#alarmas">
+                <h3>Alarmas</h3>
+            </a>
+            <a class="producto-busqueda camaras" href="#camaras">
+                <h3>Camaras</h3>
+            </a>
+            <a class="producto-busqueda detectores" href="#detectores">
+                <h3>Detectores</h3>
+            </a>
+            <a class="producto-busqueda monitoreo" href="#monitoreo">
+                <h3>Monitoreo</h3>
+            </a>
+        </div>
+    </main>
+
+    <section class="productos">
+        <div class="producto" id="alarmas">
+            <h2>Alarmas</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="producto-card">
+                        <img src="img/alarma-producto.jpg" alt="Alarmas">
+                        <h3>Alarma 1</h3>
+                        <p>Protege tu hogar con esta alarma de última generación.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/alarma-producto.jpg" alt="Alarmas">
+                        <h3>Alarma 2</h3>
+                        <p>Alarma inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/alarma-producto.jpg" alt="Alarmas">
+                        <h3>Alarma 3</h3>
+                        <p>Alarma inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/alarma-producto.jpg" alt="Alarmas">
+                        <h3>Alarma 4</h3>
+                        <p>Alarma inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="4">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="producto" id="camaras">
+            <h2>Camaras</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="producto-card">
+                        <img src="img/camara-producto.avif" alt="Camaras">
+                        <h3>Camara 1</h3>
+                        <p>Protege tu hogar con esta camara de última generación.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/camara-producto.avif" alt="Camaras">
+                        <h3>Camara 2</h3>
+                        <p>Camara inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/camara-producto.avif" alt="Camaras">
+                        <h3>Camara 3</h3>
+                        <p>Camara inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="7">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/camara-producto.avif" alt="Camaras">
+                        <h3>Camara 4</h3>
+                        <p>Camara inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="producto" id="detectores">
+            <h2>Detectores</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="producto-card">
+                        <img src="img/detetor-producto.png" alt="Detectores">
+                        <h3>Detectores 1</h3>
+                        <p>Protege tu hogar con este detector de última generación.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/detetor-producto.png" alt="Detectores">
+                        <h3>Detectores 2</h3>
+                        <p>Detector inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/detetor-producto.png" alt="Detectores">
+                        <h3>Detectores 3</h3>
+                        <p>Detector inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="11">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/detetor-producto.png" alt="Detectores">
+                        <h3>Detectores 4</h3>
+                        <p>Detector inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="12">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="producto" id="monitoreo">
+            <h2>Monitoreo</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="producto-card">
+                        <img src="img/monitoreo-producto.jpg" alt="Monitoreo">
+                        <h3>Monitoreo 1</h3>
+                        <p>Protege tu hogar con este servicio de monitoreo.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="13">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/monitoreo-producto.jpg" alt="Monitoreo">
+                        <h3>Monitoreo 2</h3>
+                        <p>Monitoreo inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="14">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/monitoreo-producto.jpg" alt="Monitoreo">
+                        <h3>Monitoreo 3</h3>
+                        <p>Monitoreo inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="15">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                    <div class="producto-card">
+                        <img src="img/monitoreo-producto.jpg" alt="Monitoreo">
+                        <h3>Monitoreo 4</h3>
+                        <p>Monitoreo inteligente con conexión a la nube.</p>
+                        <div class="contenedor-btn">
+                            <a href="#" class="btn-producto" data-id="16">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app-productos.js"></script>
+</body>
+</html>

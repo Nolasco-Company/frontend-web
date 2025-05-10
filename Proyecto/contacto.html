@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-contacto.css">
+    <title>Secure Vision</title>
+</head>
+<body class="home">
+    <header>
+        <div>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
+        </div>
+        <div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-contacto">
+        <h1>Contacto</h1>
+        <div class="contacto">
+            <h2>Trabajemos Juntos!</h2>
+            <div class="contacto-formularioinformacion">
+                <form action="enviar_contacto.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="contacto-informacion">
+                    <h3>Información de Contacto</h3>
+                    <div>
+                        <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                        <p><strong>Email:</strong> securevision@outlook.com</p>
+                        <p><strong>Ubicacion:</strong> Santiago de Queretaro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

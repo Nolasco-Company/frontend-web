@@ -1,0 +1,15 @@
+.contenedor-index{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 22px;
+}
+
+@media(min-width: 768px){
+    .contenedor-index{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 150px;
+    }
+}

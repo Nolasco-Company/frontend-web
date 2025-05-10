@@ -1,0 +1,336 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.home{
+    background-image: none;
+    background-color: white;
+}
+
+.main-productos{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-productos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.producto-busqueda{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+}
+
+.alarmas{
+    background-image: url(../img/alarma.png);
+}
+
+.camaras{
+    background-image: url(../img/camara.jpeg);
+}
+
+.detectores{
+    background-image: url(../img/detector.jpg);
+}
+
+.monitoreo{
+    background-image: url(../img/monitoreo.webp);
+}
+
+.producto-busqueda h3{
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.productos{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+}
+
+.producto{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+}
+
+.producto h2{
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.producto-card{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+}
+
+.producto-card img{
+    width: 120px;
+    height: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+}
+.producto-card h3{
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.producto-card p{
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+.producto-card {
+    flex: 0 0 calc((100% - 2rem) / 3); /* 3 cards por vista con 2 gaps de 1rem */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
+.contenedor-btn{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn-producto{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 24px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn-producto:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/** Carrito */
+/* Contenedor general del carrito */
+.carrito-container {
+    width: 13%;
+    float: right;
+    position: relative;
+    margin-right: 2%;
+}
+
+/* Menú del carrito */
+.carrito-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Submenú */
+.carrito-submenu {
+    position: relative;
+}
+
+/* Ícono del carrito */
+#icono-carrito {
+    width: 32px;
+    cursor: pointer;
+}
+
+/* Dropdown del carrito */
+.carrito-dropdown {
+    display: none; /* Puedes activar con JS */
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 300px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.site-header {
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0.5rem 1rem;
+    background: #fff;
+  }
+
+  h1{
+    position: absolute;
+    top: 120px;
+  }
+
+  .site-header__branding {
+    display: flex;
+    align-items: center;
+  }
+  .site-header__branding img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+  }
+  .site-header__title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .site-header__nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .cart-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .cart-icon img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: none;
+    min-width: 300px;
+    z-index: 10;
+  }
+  .cart-icon:hover .cart-dropdown {
+    display: block;
+  }
+
+  .cart-dropdown table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .cart-dropdown th, .cart-dropdown td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  .cart-dropdown img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .remove-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
